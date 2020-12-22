@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/crud.css"/>
+    <link rel="stylesheet" href="CSS/grid-crud.css"/>
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+    <title>CRUD-JAVASCRIPT</title>
+  </head>
+  <body>
+    <div class='containerFormUpdate'>
+      <form class="form col-lg-10 col-md-10"
+      id="addUsers"
+      onsubmit="event.preventDefault(), aña()"
+      action="/users.php">
+
+      <div class="form-specific">
+        <label for="marca" class="form-label">Marca</label>
+        <input
+        type="text"
+        id="marca"
+        placeholder="Ingresa la marca"
+        required/>
+      </div>
+
+      <div class="form-specific">
+        <label for="modelo">Modelo</label>
+        <input
+        type="text"
+        id="modelo"
+        placeholder="Ingresa el modelo"
+        required/>
+      </div class="form-specific">
+
+      <div class="form-specific">
+        <label for="color">Color</label>
+        <input
+        type="text"
+        id="color"
+        placeholder="Ingresa el color"
+        required/>
+      </div>
+      
+      <div class="form-specific">
+        <label for="start">Fecha</label>
+        <input type="number" id="start" placeholder="Año del vehiculo">
+      </div>
+
+      <div class="form-specific">
+        <label for="precio">Precio</label>
+        <input
+        type="text"
+        id="precio"
+        placeholder="Ingresa el precio del vehiculo"
+        required/>
+      </div>
+
+      <div class="form-specific">
+        <label for="imagen">Imagen</label>
+        <input
+        type="url"
+        id="imagen"
+        placeholder="Ingresa la URL de su imagen"
+        required/>
+      </div>
+
+      <div class="button-form">
+        <button ctype="submit" class="button">Añadir</button>
+      </div>
+
+    </form>
+  </div>
+
+  <!-- En esta parte pongo el formulario de Actualización -->
+
+  <div class="containerFormUpdate">
+    <form class="form form col-lg-10 col-md-10"
+    id="updateUsers" 
+    onsubmit="event.preventDefault(), updateTodo()"
+    action="/users.php">
+
+    <div class="form-specific">
+      <label for="marcaUpdate">Marca</label>
+      <input
+      type="text"
+      id="marcaUpdate"
+      placeholder="Ingrese la marca"
+      required/>    
+    </div>
+
+    <div class="form-specific">
+      <label for="modeloUpdate">Modelo</label>
+      <input
+      type="text"
+      id="modeloUpdate"
+      placeholder="Ingrese el modelo"
+      required/>
+    </div class="form-specific">
+
+    <div class="form-specific">
+      <label for="colorUpdate">Color</label>
+      <input
+      type="text"
+      id="colorUpdate"
+      placeholder="Ingresa el color"
+      required/>
+    </div>
+
+    <div class="form-specific">
+      <label for="añoUpdate">Año</label>
+      <input type="number" id="añoUpdate" placeholder="Fecha del vehiculo">
+    </div>
+
+    <div class="form-specific">
+      <label for="precioUpdate">Precio</label>
+      <input
+      type="text"
+      id="precioUpdate"
+      placeholder="Ingresa el precio"
+      required/>
+    </div>
+
+    <div class="form-specific">
+      <label for="imagenUpdate">Imagen</label>
+      <input
+      type="text"
+      id="imagenUpdate"
+      placeholder="URL de la imagen del vehiculo"
+      required/>
+    </div>
+
+    <div class="button-form">
+      <button type="submit" class="button">Actualizar</button>
+    </div>
+
+  </form>
+  </div>
+
+<!-- Aquì creo la estructura de la tabla -->
+
+  <div class="container-table"> 
+  <table class="table table col-lg-10 col-md-10">
+    <thead>
+      <tr>
+        <th>Marca</th>
+        <th>Modelo</th>
+        <th>Color</th>
+        <th>Año</th>
+        <th>Precio</th>
+        <th>fotografica</th>
+        <th>Eliminar</th>
+        <th>Actualizar</th>
+      </tr>
+    </thead>
+    <tbody class="table" id="probando"></tbody>
+  </table>
+  </div>
+
+  <script src="JAVASCRIPT/javascript4semana.js"></script>
+  </body>
+  </html>

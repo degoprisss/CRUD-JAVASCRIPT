@@ -1,0 +1,80 @@
+.containerFormUpdate {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 3% 3%;
+}
+
+.form {
+  padding: 1%;
+  border: 1px rgba(0 0 0 / 18%) solid;
+  border-radius: 0.6%;
+}
+
+.form-specific {
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+
+label {
+  font-size: 1em;
+  font-family: sans-serif;
+  padding-bottom: 1%;
+  color: #212529;
+}
+
+.button-form {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-content: center;
+  padding: 1.6% 3.3%;
+  color: #fff;
+  background-color: #007bff;
+  border: 0px;
+  border-radius: 6%;
+  text-align: center;
+}
+
+input {
+  padding: 1.5% 2%;
+  border: 1px rgba(0 0 0 / 18%) solid;
+}
+
+/* Table */
+
+.container-table {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3% 0%;
+  margin: 3% 3%;
+}
+
+.table thead th {
+  border-bottom: 2px solid #607d8b80;
+}
+.table tbody td {
+  border-bottom: 1px solid #607d8b80;
+  padding: 1% 0%;
+  text-align: center;
+}
+
+.center-button {
+  padding: 4% 4%;
+  color: #fff;
+  background-color: #007bff;
+  margin-left: 10%;
+  border: 0px;
+  border-radius: 6%;
+}
+
+.td-img {
+  border-radius: 3%;
+}
