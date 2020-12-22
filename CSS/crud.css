@@ -53,8 +53,10 @@ input {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 3% 0%;
+  /* padding: 3% 0%; */
   margin: 3% 3%;
+  /* border: solid; */
+  overflow: visible;
 }
 
 .table thead th {
